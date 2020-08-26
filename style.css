@@ -1,0 +1,329 @@
+/* ここからテンプレ */
+html {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-weight: 500;
+  color: rgb(171, 171, 171);
+  line-height: 2.0;
+  background-color: rgba( 15,20,30, 0.99);
+}
+
+h2,h3,h4,h5 {
+  margin: 0;
+  padding: o;
+}
+
+img {
+  width: 100%;
+  vertical-align: bottom;
+}
+
+ul,li,dl,dt,dd {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+a:hover {
+  transition: 3s;
+  opacity: 0.6;
+}
+
+.content-wrapper {
+  width: 1400px;
+  margin: 0 auto;
+}
+/* ここからheader */
+.header {
+  width: 100%;
+  background: #000;
+}
+.header a {
+  color: #fff;
+}
+.header-nav {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header nav ul li {
+  margin-right: 50px;
+}
+/* ここからfooter */
+footer .content-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 50px 0;
+}
+.footer a {
+  color: #fff;
+}
+.address p {
+  line-height: 1.8;
+}
+footer ul {
+  display: flex;
+}
+footer ul li {
+  margin-right: 50px;
+}
+.copylight p {
+  text-align: center;
+  font-size: 0.75rem;
+  margin: 0;
+  line-height: 100px;
+  color: #fff;
+  background-color: #000;
+}
+/* ここからvisual */
+.subvisual {
+  margin-bottom: 120px;
+  background-image: url(images/CES_01_pc.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: center;
+}
+.subvisual h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  letter-spacing: 2rem;
+  color: #fff;
+  line-height: 200px;
+  font-weight: normal;
+  margin-top: 0;
+}
+/* ここからメインビジュアル */
+.work-description01 {
+  margin-bottom: 240px;
+}
+.work-description01 dl {
+  width: 100%;
+  position: relative;
+}
+.work-description01 dl dt img {
+  width: 60%;
+  height: 500px;
+  object-fit: cover;
+  margin-left: 50px;
+}
+.work-description01 dl dd {
+  width: 40%;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  background-color: rgba(255, 255, 255,0.95);
+  color: #333;
+  padding: 80px;
+  z-index: 2;
+}
+.work-description02 {
+  margin-bottom: 240px;
+}
+.work-description02 dl {
+  width: 100%;
+  position: relative;
+}
+.work-description02 dl dt img {
+  width: 60%;
+  height: 500px;
+  object-fit: cover;
+  margin-right: 50px;
+}
+.work-description02 dl dd {
+  width: 40%;
+  position: absolute;
+  top: 60%;
+  left: 10%;
+  background-color: rgba(255, 255, 255,0.95);
+  color: #333;
+  padding: 80px;
+  z-index: 2;
+}
+.work-description02 dt {
+  display: flex;
+  justify-content: flex-end;
+}
+.work-description03 {
+  margin-bottom: 240px;
+}
+.work-description03 dl {
+  width: 100%;
+  position: relative;
+}
+.work-description03 dl dt img {
+  width: 60%;
+  height: 500px;
+  object-fit: cover;
+  margin-left: 50px;
+}
+.work-description03 dl dd {
+  width: 40%;
+  position: absolute;
+  top: 60%;
+  left: 40%;
+  background-color: rgba(255, 255, 255,0.95);
+  color: #333;
+  padding: 80px;
+  z-index: 2;
+}
+/* ここからスマホのレスポンシブ */
+@media screen and (max-width:767px) {
+  /* ここからヘッダー  */
+  .header h1 {
+    z-index: 1;
+    text-align: center;
+    margin-left: 5px;
+  }
+  .header-nav {
+    width: 100%;
+  }
+  .header-nav nav {
+    display: none; 
+  }
+  /* ここからフッター */
+ .footer {
+   width: 100%;
+ }
+ .footer .address p {
+   font-size: 15px;
+ }
+ footer .content-wrapper {
+  display: block;
+  width: 100%;
+  text-align: center;
+ }
+ footer ul {
+  display: block;
+ }
+ footer ul li {
+   margin-right: 0;
+   padding: 20px 0;
+ }
+ .mark {
+   font-size: 0.05rem;
+ }
+ /* ここからメイン */
+ .work-description01 {
+  margin-bottom: 140px;
+  width: 100%;
+}
+.work-description01 dl {
+  width: 100%;
+  position: relative;
+}
+.work-description01 dl dt img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+}
+ .work-description01 dl dd {
+  width: 100%;
+  position: static;
+  background-color: rgba(255, 255, 255,0.95);
+  color: #333;
+  padding: 0px;
+  z-index: 2;
+}
+.work-description02 {
+  margin-bottom: 140px;
+  width: 100%;
+}
+.work-description02 dl {
+  width: 100%;
+  position: relative;
+}
+.work-description02 dl dt img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+}
+ .work-description02 dl dd {
+  width: 100%;
+  position: static;
+  background-color: rgba(255, 255, 255,0.95);
+  color: #333;
+  padding: 0px;
+  z-index: 2;
+}
+.work-description03 {
+  margin-bottom: 140px;
+  width: 100%;
+}
+.work-description03 dl {
+  width: 100%;
+  position: relative;
+}
+.work-description03 dl dt img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  margin: 0;
+}
+ .work-description03 dl dd {
+  width: 100%;
+  position: static;
+  background-color: rgba(255, 255, 255,0.95);
+  color: #333;
+  padding: 0px;
+  z-index: 2;
+}
+}
+/* ここからタブレット対応 */
+@media screen and (min-width:768px) and (max-width:1024px) {
+  /* ここからヘッダー */
+  .header h1 {
+    z-index: 1;
+    margin: auto 10%;
+  }
+  .header-nav {
+    width: 100%;
+  }
+  .header-nav nav {
+    display: none; 
+  }
+  /* ここからフッター */
+ .footer {
+   width: 100%;
+ }
+ .footer h2 {
+   font-size: 3rem;
+ }
+ .footer .address p {
+   font-size: 15px;
+ }
+ footer .content-wrapper {
+  display: block;
+  width: 100%;
+  text-align: center;
+  padding: 50px 0 5px 0;
+ }
+ footer ul {
+  display: flex;
+ }
+ footer ul li {
+   margin: 0 auto;
+   padding: 20px 0 0 0;
+ }
+ .mark {
+   font-size: 0.05rem;
+ }
+}
